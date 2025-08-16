@@ -1,0 +1,282 @@
+{
+    "sizes":[
+        {   
+            "id":"s1",
+            "name":"PEQUENA(2 sabores, 6 fatias, 25cm)",
+            "price":35.00,
+            "value":"small"
+        },{
+            "id":"s2",
+            "name":"MEDIA(2 sabores, 8 fatias, 30cm)",
+            "price":42.00,
+            "value":"average"
+        },{
+            "id":"s3",
+            "name":"GRANDE(3 sabores, 12 fatias, 35cm)",
+            "price":55.00,
+            "value":"larger"
+        },{
+            "id":"s4",
+            "name":"GIGANTE(4 sabores, 16 fatias, 40cm)",
+            "price":65.00,
+            "value":"giant"
+        },{
+            "id":"s5",
+            "name":"KING(4 sabores, 20 fatias, 45cm)",
+            "price":85.00,
+            "value":"king"
+        }
+    ],
+    "pizzas":[
+        {
+            "id": 1,
+            "name":"Alho e Óleo",
+            "description":"Molho, mussarela, alho, óleo e orégano."
+        },{
+            "id": 2,
+            "name":"Atum",
+            "description":"Molho, mussarela, atum e orégano."
+        },{
+            "id": 3,
+            "name":"Atum Acebolado",
+            "description":"Molho, mussarela, atum, cebola, ovos e orégano."
+        },{
+            "id": 4,
+            "name":"Bacon",
+            "description":"Molho, mussarela, bacon e orégano."
+        },{
+            "id": 5,
+            "name":"Bacon com Cheddar",
+            "description":"Molho, mussarela, bacon, cheddar e orégano."
+        },{
+            "id": 6,
+            "name":"Bacon com Catupiry",
+            "description":"Molho, mussarela, bacon, catupiry e orégano."
+        },{
+            "id": 7,
+            "name":"Baiana",
+            "description":"Molho, mussarela, calabresa, pimentão, molho de pimenta e orégano."
+        },{
+            "id": 8,
+            "name":"Brócolis",
+            "description":"Molho, mussarela, brócolis, bacon e orégano."
+        },{
+            "id": 9,
+            "name":"Brócolis com Bacon",
+            "description":"Molho, mussarela, brócolis, bacon e orégano."
+        },{
+            "id": 10,
+            "name":"Calabresa",
+            "description":"Molho, mussarela, calabresa e orégano."
+        },{
+            "id":11,
+            "name":"Calabresa, Alho e óleo",
+            "description":"Molho, mussarela, calabresa, alho , óleo e orégano."
+        },{
+            "id":12,
+            "name":"Calabresa Catupiry",
+            "description":"Molho, mussarela, calabresa, catupiry e orégano."
+        },{
+            "id":13,
+            "name":"Calabresa Acebolada",
+            "description":"Molho, mussarela, calabresa, cebola e orégano."
+        },{
+            "id":14,
+            "name":"Canadense",
+            "description":"Molho, mussarela, lombo, abacaxi em calda, catupiry e orégano"
+        },{
+            "id":15,
+            "name":"Champignon",
+            "description":"Molho, mussarela, champignon e orégano."
+        },{
+            "id":16,
+            "name":"Coração Chapeado",
+            "description":"Molho, mussarela, coração chapeado e orégano."
+        },{
+            "id":17,
+            "name":"Frango Creme",
+            "description":"Molho, mussarela, frango, creme de leite e orégano."
+        },{
+            "id":18,
+            "name":"Paulista",
+            "description":"Molho, mussarela, milho, ervilha, palmito e orégano."
+        },{
+            "id":19,
+            "name":"do Chefe",
+            "description":"Molho, mussarela, frango, bacon, champignon, catupiry e orégano."
+        },{
+            "id":20,
+            "name":"Especial",
+            "description":"Molho, mussarela, calabresa, tomate, cebola, catupiry e orégano."
+        },{
+            "id":21,
+            "name":"Duas Camadas",
+            "description":"Molho, mussarela, presunto, catupiry e orégano."
+        },{
+            "id":22,
+            "name":"Frango Catupiry",
+            "description":"Molho, mussarela, frango, catupiry e orégano."
+        },{
+            "id":23,
+            "name":"Frango Xadrez",
+            "description":"Molho, mussarela, frango, cebola, tomate, pimentão e orégano."
+        },{
+            "id":24,
+            "name":"Italianinha",
+            "description":"Molho, mussarela, salame italiano, tomate, parmesão, cebola e orégano."
+        },{
+            "id":25,
+            "name":"Kartoffel",
+            "description":"Molho, mussarela, batata, bacon, parmesão,catupiry e orégano."
+        },{
+            "id":26,
+            "name":"Lombo Catupiry",
+            "description":"Molho, mussarela, lombo, catupiry e orégano."
+        },{
+            "id":27,
+            "name":"Lombo Cheddar",
+            "description":"Molho, mussarela, lombo, cheddar e orégano."
+        },{
+            "id":28,
+            "name":"Marguerita",
+            "description":"Molho, mussarela, manjericão, tomate e orégano."
+        },{
+            "id":29,
+            "name":"Milho",
+            "description":"Molho, mussarela, milho, catupiry e orégano."
+        },{
+            "id":30,
+            "name":"Milano",
+            "description":"Molho, mussarela, caçabresa, bacon, parmesão e orégano."
+        },{
+            "id":31,
+            "name":"Napolitana",
+            "description":"Molho, mussarela, tomate, parmesão e orégano."
+        },{
+            "id":32,
+            "name":"Palmito",
+            "description":"Molho, mussarela, palmito e orégano."
+        },{
+            "id":33,
+            "name":"Portuguesa",
+            "description":"Molho, mussarela, presunto, ovo, cebola e orégano,"
+        },{
+            "id":34,
+            "name":"Peito de Perú",
+            "description":"Molho, mussarela, peito de perú, catupiry e orégano."
+        },{
+            "id":35,
+            "name":"4 Queijos",
+            "description":"Molho, mussarela, provolone, parmesão, catupiry e orégano."
+        },{
+            "id":36,
+            "name":"5 Queijos",
+            "description":"Molho, mussarela, provolone, parmesão, catupiry, cheddar e orégano."
+        },{
+            "id":37,
+            "name":"Mexicana Especial",
+            "description":"Molho, mussarela, calabresa, cheddar, pimentão, pimenta e orégano."
+        },{
+            "id":38,
+            "name":"Peru Especial",
+            "description":"Molho, mussarela, peito de peru, tomate, cebola, catupiry e orégano."
+        },{
+            "id":39,
+            "name":"Escondidinho de Frango",
+            "description":"Molho, mussarela, purê de batata, frango e orégano."
+        },{
+            "id":40,
+            "name":"Tropical",
+            "description":"Molho, mussarela, tomate, alface, presunto, catupiry e orégano."
+        },{
+            "id":41,
+            "name":"6 Queijos",
+            "description":"Molho, mussarela, provolone, parmesão, catupiry, cheggar, gorgonzola e orégano."
+        },{
+            "id":42,
+            "name":"Romana",
+            "description":"Molho, mussarela, presunto, tomate e orégano."
+        },{
+            "id":43,
+            "name":"Rúcula com Tomate Seco",
+            "description":"Molho, mussarela, rúcula, tomate seco e orégano."
+        },{
+            "id":44,
+            "name":"Strogonoff de Frango",
+            "description":"Molho, mussarela, strogonoff de frango, batata palha e orégano."
+        },{
+            "id":45,
+            "name":"Saborosa",
+            "description":"Molho, mussarela, frango, bacon, catupiry e orégano."
+        },{
+            "id":46,
+            "name":"Siciliana",
+            "description":"Molho, mussarela, champignon, bacon, catupiry e orégano."
+        },{
+            "id":47,
+            "name":"Vegetariana",
+            "description":"Molho, mussarela, brócolis, tomate, milho, palmito e orégano."
+        }
+    ],
+    "drinks":[
+        {
+            "id":"d1",
+            "name":"Coca-Cola 2l",
+            "price":10.00
+        },{
+            "id":"d2",
+            "name":"Guaraná 2l",
+            "price":10.00
+        },{
+            "id":"d3",
+            "name":"Coca-Cola Lata",
+            "price":5.00
+        },{
+            "id":"d4",
+            "name":"Guaraná Lata",
+            "price":5.00
+        },{
+            "id":"d5",
+            "name":"Cerveja 600ml",
+            "price":12.00
+        },{
+            "id":"d6",
+            "name":"Cerveja Lata",
+            "price":7.00
+        }
+    ],
+    "borders":[
+        {
+            "id":"b1",
+            "name":"Catupiry",
+            "price":8.00
+        },{
+            "id":"b2",
+            "name":"Cheddar",
+            "price":8.00
+        },{
+            "id":"b3",
+            "name":"Chocolate Preto",
+            "price":9.00
+        },{
+            "id":"b4",
+            "name":"Chocolate Branco",
+            "price":9.00
+        },{
+            "id":"b5",
+            "name":"Nenhuma",
+            "price":0.00
+        }
+    ],
+    "delivery":[
+        {
+            "id":"moto",
+            "name":"Motoboy",
+            "price":8.00
+        },{
+            "id":"local",
+            "name":"Retirar no Local",
+            "price":0.00
+        }
+    ]
+}

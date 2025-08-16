@@ -1,0 +1,55 @@
+// Array que guarda todos os pedidos da sessão
+let notedOrder = [];
+
+function writingOrder (menu){
+    // Captura o envio do formulário de pizza
+    const formPizza = document.querySelector('.unit-pizza-box');
+    formPizza.addEventListener('submit', (e) => {
+        e.preventDefault(); // evita reload da página
+        //código aqui
+
+        console.log(formPizza);
+
+
+    });
+
+    //Captura o envio do formulário de bebidas
+    const formDrinks = document.querySelector('.command-drink');
+    formDrinks.addEventListener('submit', (e) =>{
+        e.preventDefault(); //evita reload da página
+        //código aqui
+        console.log(formDrinks);
+    });
+
+};
+
+export {writingOrder, notedOrder};
+
+
+
+
+
+
+
+
+
+
+        /*/ Monta o objeto do pedido
+        const order = {
+            
+            tamanho: document.getElementById('size').value,
+            borda: document.getElementById('border').value,
+            sabores: [
+                document.getElementById('flavor_one').value,
+                document.getElementById('flavor_two').value,
+                document.getElementById('flavor_three').value,
+                document.getElementById('flavor_four').value
+            ].filter(s => s), // remove strings vazias
+            bebida: document.querySelector('.command-drink select').value,
+            quantidadeBebida: parseInt(document.getElementById('unit-drink').value, 10)
+        };
+
+        // Adiciona ao array de pedidos
+        orders.push(order);
+
+        console.log('Pedidos atuais:', orders);*/
