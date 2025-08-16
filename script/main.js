@@ -1,8 +1,8 @@
 import viewMenuBox from "interface/view-menu.js";
-import menuShowClose from "./buttons/menu-show-close.js";
-import * as inputsContent from "./interface/inputs-contents.js"
-import chooseSize from "./interface/choose-sizes.js";
-import * as writingOrders from "./command/orders.js"
+import menuShowClose from "buttons/menu-show-close.js";
+import * as inputsContent from "interface/inputs-contents.js"
+import chooseSize from "interface/choose-sizes.js";
+import * as writingOrders from "command/orders.js"
 
 //Funções que precisam acessar json.
 document.addEventListener('DOMContentLoaded', ()=>{
