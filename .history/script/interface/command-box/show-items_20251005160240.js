@@ -13,7 +13,7 @@ export default function showItems(notedOrder){
             <p>Pizza: ${pizza.pizza}</p>
             <p>Borda: ${pizza.borda}</p>
             <p>Sabor(es): ${pizza.sabores.join(', ')}</p>
-            <button class="remove-button" data-index="${index}" data-type="pizza">REMOVER</button>
+            <button class="remove-button" data-index="${index}" data-type="pizza"> remove </button>
         `;
         orderedItemsDiv.appendChild(pizzaDiv);
     });
@@ -26,7 +26,7 @@ export default function showItems(notedOrder){
             <h4>Bebida ${index + 1}</h4>
             <p>Bebida: ${drink.bebida}</p>
             <p>Quantidade: ${drink.quantidadeBebida}</p>
-            <button class="remove-button" data-index="${index}" data-type="drink">REMOVER</button>
+            <button class="remove-button" data-index="${index}" data-type="drink"> remove </button>
         `;
         orderedItemsDiv.appendChild(drinkDiv);
     });

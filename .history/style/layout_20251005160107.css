@@ -20,7 +20,7 @@
     text-align: center;
     margin-bottom: 10px;}
 .ordered-item{
-    border-bottom: 1px dashed #333;
+    border: 1px dashed #333;
     padding: 2px;
     margin: 5px 0;
     min-width: 100%;
