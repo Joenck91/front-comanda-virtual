@@ -1,8 +1,5 @@
 // Array que guarda todos os pedidos da sessão
-let notedOrder = {
-    pizzas: [],
-    drinks: []
-};
+let notedOrder = [];
 
 function writingOrder (menu){
     // Captura o envio do formulário de pizza
@@ -11,21 +8,7 @@ function writingOrder (menu){
         e.preventDefault(); // evita reload da página
         //código aqui
 
-        const pizzaOrder = {
-            pizza: document.getElementById('size').value,
-            borda: document.getElementById('border').value,
-            sabores: [
-                document.getElementById('flavor_one').value,
-                document.getElementById('flavor_two').value,
-                document.getElementById('flavor_three').value,
-                document.getElementById('flavor_four').value
-            ].filter(s => s), // remove strings vazias
-        };
-
-        // Adiciona ao array de pedidos
-        notedOrder.pizzas.push(pizzaOrder);
-
-        console.log(notedOrder);
+        console.log(formPizza);
 
 
     });
@@ -35,15 +18,7 @@ function writingOrder (menu){
     formDrinks.addEventListener('submit', (e) =>{
         e.preventDefault(); //evita reload da página
         //código aqui
-        const drinkOrder = {
-            bebida: document.querySelector('.command-drink select').value,
-            quantidadeBebida: parseInt(document.getElementById('unit-drink').value, 10)
-        };
-
-        // Adiciona ao array de pedidos
-        notedOrder.drinks.push(drinkOrder);
-
-        console.log(notedOrder);
+        console.log(formDrinks);
     });
 
 };

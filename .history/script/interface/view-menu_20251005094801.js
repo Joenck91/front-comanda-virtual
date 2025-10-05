@@ -1,6 +1,3 @@
-/* ********FUNÇÃO QUE CRIA O CARDÁPIO ******** */
-
-
 export default function viewMenuBox (menu){
   const box = document.getElementById('view-menu-box');
         box.innerHTML = ''; // Limpa o conteúdo da div

@@ -1,8 +1,5 @@
 // Array que guarda todos os pedidos da sessão
-let notedOrder = {
-    pizzas: [],
-    drinks: []
-};
+let notedOrder = [];
 
 function writingOrder (menu){
     // Captura o envio do formulário de pizza
@@ -23,7 +20,7 @@ function writingOrder (menu){
         };
 
         // Adiciona ao array de pedidos
-        notedOrder.pizzas.push(pizzaOrder);
+        notedOrder.push(pizzaOrder);
 
         console.log(notedOrder);
 

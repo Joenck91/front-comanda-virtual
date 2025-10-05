@@ -20,7 +20,7 @@ function showFlavors(pizzas) {
     selectsFlavors.forEach(select => {
         pizzas.forEach(pizza => {
             const option = document.createElement("option");
-            option.value = pizza.name;
+            option.value = pizza.id;
             option.textContent = pizza.name;
             select.appendChild(option);
         });

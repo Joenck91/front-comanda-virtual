@@ -12,7 +12,7 @@ function writingOrder (menu){
         //código aqui
 
         const pizzaOrder = {
-            pizza: document.getElementById('size').value,
+            tamanho: document.getElementById('size').value,
             borda: document.getElementById('border').value,
             sabores: [
                 document.getElementById('flavor_one').value,

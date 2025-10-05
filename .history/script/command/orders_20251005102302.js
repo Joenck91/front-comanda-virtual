@@ -12,7 +12,7 @@ function writingOrder (menu){
         //código aqui
 
         const pizzaOrder = {
-            pizza: document.getElementById('size').value,
+            tamanho: document.getElementById('size').value,
             borda: document.getElementById('border').value,
             sabores: [
                 document.getElementById('flavor_one').value,
@@ -35,15 +35,7 @@ function writingOrder (menu){
     formDrinks.addEventListener('submit', (e) =>{
         e.preventDefault(); //evita reload da página
         //código aqui
-        const drinkOrder = {
-            bebida: document.querySelector('.command-drink select').value,
-            quantidadeBebida: parseInt(document.getElementById('unit-drink').value, 10)
-        };
-
-        // Adiciona ao array de pedidos
-        notedOrder.drinks.push(drinkOrder);
-
-        console.log(notedOrder);
+        console.log(formDrinks);
     });
 
 };

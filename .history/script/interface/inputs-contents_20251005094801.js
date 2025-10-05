@@ -3,7 +3,7 @@ function showsizes(sizes) {
     const selectSizes = document.getElementById("size");
     sizes.forEach(size => {
         const option = document.createElement("option");
-        option.value = size.name;
+        option.value = size.id;
         option.textContent = `${size.name} - R$${size.price.toFixed(2)}`;
         selectSizes.appendChild(option);
     });
@@ -20,7 +20,7 @@ function showFlavors(pizzas) {
     selectsFlavors.forEach(select => {
         pizzas.forEach(pizza => {
             const option = document.createElement("option");
-            option.value = pizza.name;
+            option.value = pizza.id;
             option.textContent = pizza.name;
             select.appendChild(option);
         });
