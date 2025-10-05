@@ -1,4 +1,3 @@
-import  showItems from "../interface/command-box/show-items.js";
 //Array que guarda todos os pedidos da sessão
 let notedOrder = {
     pizzas: [],
@@ -26,10 +25,6 @@ function writingOrder (menu){
         // Adiciona ao array de pedidos
         notedOrder.pizzas.push(pizzaOrder);
 
-        // Atualiza a exibição dos itens pedidos
-        showItems(notedOrder);
-
-        
         console.log(notedOrder);
 
 
@@ -47,9 +42,6 @@ function writingOrder (menu){
 
         // Adiciona ao array de pedidos
         notedOrder.drinks.push(drinkOrder);
-        // Atualiza a exibição dos itens pedidos
-        showItems(notedOrder);
-
 
         console.log(notedOrder);
     });

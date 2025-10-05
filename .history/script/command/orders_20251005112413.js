@@ -1,4 +1,3 @@
-import  showItems from "../interface/command-box/show-items.js";
 //Array que guarda todos os pedidos da sessão
 let notedOrder = {
     pizzas: [],
@@ -26,10 +25,6 @@ function writingOrder (menu){
         // Adiciona ao array de pedidos
         notedOrder.pizzas.push(pizzaOrder);
 
-        // Atualiza a exibição dos itens pedidos
-        showItems(notedOrder);
-
-        
         console.log(notedOrder);
 
 
@@ -47,9 +42,6 @@ function writingOrder (menu){
 
         // Adiciona ao array de pedidos
         notedOrder.drinks.push(drinkOrder);
-        // Atualiza a exibição dos itens pedidos
-        showItems(notedOrder);
-
 
         console.log(notedOrder);
     });
@@ -57,3 +49,32 @@ function writingOrder (menu){
 };
 
 export {writingOrder, notedOrder};
+
+
+
+
+
+
+
+
+
+
+        /*/ Monta o objeto do pedido
+        const order = {
+            
+            tamanho: document.getElementById('size').value,
+            borda: document.getElementById('border').value,
+            sabores: [
+                document.getElementById('flavor_one').value,
+                document.getElementById('flavor_two').value,
+                document.getElementById('flavor_three').value,
+                document.getElementById('flavor_four').value
+            ].filter(s => s), // remove strings vazias
+            bebida: document.querySelector('.command-drink select').value,
+            quantidadeBebida: parseInt(document.getElementById('unit-drink').value, 10)
+        };
+
+        // Adiciona ao array de pedidos
+        orders.push(order);
+
+        console.log('Pedidos atuais:', orders);*/

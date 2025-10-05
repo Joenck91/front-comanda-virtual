@@ -2,8 +2,7 @@ import viewMenuBox from "./interface/view-menu.js";
 import menuShowClose from "./buttons/menu-show-close.js";
 import * as inputsContent from "./interface/inputs-contents.js"
 import chooseSize from "./interface/choose-sizes.js";
-import * as writingOrders from "./command/orders.js";
-import removeCommandItem from "./buttons/remove-command-item.js";
+import * as writingOrders from "./command/orders.js"
 
 //Funções que precisam acessar json.
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         inputsContent.showDrinks(menu.drinks);  //Opções de bebidas
         chooseSize();//Define quantidade de sabores de acordo com o tamanho selecionado.
         writingOrders.writingOrder(menu);//Armazena as opçoes escolhidas pelo usuário na variável orders
-        removeCommandItem();//Remove itens da comanda
+
 
     })
     .catch(err => console.error('Erro ao carregar menu:', err));// Captura e exibe no console qualquer erro ocorrido ao carregar o menu.

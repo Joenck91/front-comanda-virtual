@@ -33,6 +33,7 @@
     position: absolute;
     top: 5px;
     right: 5px;
+    font-size: 10px;
 }
 .remove-button:hover{
     background-color: #ff9999;

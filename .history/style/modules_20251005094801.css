@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------*/
 /*                             BOTÕES                                          */
 /*-----------------------------------------------------------------------------*/
-.view-menu-button{/*botão ver cardápio*/
+.view-menu-button{
     position: absolute;
     top: -120px;
     right: 5px;;
@@ -24,22 +24,6 @@
     border-radius: 10px 5px;
     background-color: white;
     font-style: italic;
-}
-.remove-button{/*Botão de remover itens da comanda*/
-    background-color: #ffcccc;
-    border: 1px solid #cc0000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-    0 2px 4px rgba(0, 0, 0, 0.06);
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
-.remove-button:hover{
-    background-color: #ff9999;
-    border: 1px solid #cc0000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2),
-    0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
 }
 /*-----------------------------------------------------------------------------*/
 /*                     PARA VÁRIOS ELEMENTOS                                   */

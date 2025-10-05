@@ -31,8 +31,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
     0 2px 4px rgba(0, 0, 0, 0.06);
     position: absolute;
-    top: 5px;
-    right: 5px;
+    right: 28px;
 }
 .remove-button:hover{
     background-color: #ff9999;

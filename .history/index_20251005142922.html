@@ -13,14 +13,12 @@
 <body class="body-style">
     <header>
         <div class="title-buttons">
-            <h2>Comanda Virtual</h2>
+            <p>Comanda Virtual</p>
         </div>
         <div class="command-box" id="total">
-            <h3>Pedido</h3>
-            <div class="ordered-items" id="ordered-items">
-                <p>Nenhum item adicionado.</p>
+            <h2><strong>Pedido</strong></h2>
+            <div class="ordered-items"></div>
             <!--CRIAR ESTRUTURA DE PEDIDO COM JSON-->
-            </div>
         </div>
     </header>
 
@@ -33,7 +31,7 @@
             <!-- Borda recheada -->
             <div class="border-pizza-box pad-bot-10">
                 <label for="border"><h4>Borda Recheada:</h4></label>
-                <select name="border" id="border" required>
+                <select name="border" id="border">
                     <option value="" selected >Escolha uma borda</option>
                 </select>         
             </div>
@@ -41,7 +39,7 @@
             <!-- Tamanho da pizza -->
             <div class="size-pizza-box pad-bot-10">
                 <label for="size"><h4>Tamanho:</h4></label>
-                <select name="size" id="size" required>                    
+                <select name="size" id="size">                    
                     <option value="" selected >Escolha um Tamanho</option>
                 </select>
             </div>
@@ -50,7 +48,7 @@
             <div id="choose-pizza-box" class="choose-pizza-box pad-bot-10">
                 <button type="button" class="buttons-style view-menu-button" id="view-menu"><strong>Ver Cardápio</strong></button>
                 <label for="flavors"><h4>Sabores:</h4></label>
-                <select name="flavors" id="flavor_one" class="flavor_one" required>
+                <select name="flavors" id="flavor_one" class="flavor_one">
                     <option value="" selected >Escolha um sabor</option>
                 </select>
                 <select name="flavors" id="flavor_two" class="flavor_two">
@@ -71,8 +69,8 @@
         <form class="command-drink">
             <div class="choose-drink-box">
                 <label for="drinks"><h4>Bebidas:</h4></label>
-                <select name="drinks" id="" required>
-                    <option value="">Selecione uma bebida.</option>
+                <select name="drinks" id="">
+                    <option value="drinks">Selecione uma bebida.</option>
                 </select>
             </div>
             <div class="unit-input-drink">
