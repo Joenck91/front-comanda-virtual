@@ -3,7 +3,7 @@ function showsizes(sizes) {
     const selectSizes = document.getElementById("size");
     sizes.forEach(size => {
         const option = document.createElement("option");
-        option.value = size.name;
+        option.value = size.id;
         option.textContent = `${size.name} - R$${size.price.toFixed(2)}`;
         selectSizes.appendChild(option);
     });
@@ -20,7 +20,7 @@ function showFlavors(pizzas) {
     selectsFlavors.forEach(select => {
         pizzas.forEach(pizza => {
             const option = document.createElement("option");
-            option.value = pizza.name;
+            option.value = pizza.id;
             option.textContent = pizza.name;
             select.appendChild(option);
         });
@@ -31,7 +31,7 @@ function showBorders(borders) {
     const selectBorder = document.getElementById("border");
     borders.forEach(border => {
         const option = document.createElement("option");
-        option.value = border.name;
+        option.value = border.id;
         option.textContent = `${border.name} - R$${border.price.toFixed(2)}`;
         selectBorder.appendChild(option);
     });
@@ -41,7 +41,7 @@ function showDrinks(drinks) {
     const selectDrinks = document.querySelector('.command-drink select');
     drinks.forEach(drink => {
         const option = document.createElement("option");
-        option.value = drink.name;
+        option.value = drink.id;
         option.textContent = `${drink.name} - R$${drink.price.toFixed(2)}`;
         selectDrinks.appendChild(option);
     });
