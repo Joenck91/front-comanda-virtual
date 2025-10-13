@@ -13,7 +13,7 @@ export default async function showItems(notedOrder){
 
         const promisesDosSabores = pizzaOrder.sabores.map(saborId => findProductById(saborId));
         const infosDosSabores = await Promise.all(promisesDosSabores);
-        let totalPizza = sizeInfo.price + borderInfo.price
+        let totalPizza = sizeInfo.price + borderInfo.price;
 
         const nomesDosSabores = infosDosSabores
             .map(sabor => (sabor ? sabor.name : 'Sabor Inválido'))
@@ -34,13 +34,14 @@ export default async function showItems(notedOrder){
     // --- MOSTRA BEBIDAS ---
     for (const [index, drinkOrder] of notedOrder.drinks.entries()) {
         const drinkInfo = await findProductById(drinkOrder.bebida);
+        let totalDrinks = drinkInfo.price * drinkOrder.quantidadeBebida;
 
         const drinkDiv = document.createElement('div');
         drinkDiv.classList.add('ordered-item');
         
         drinkDiv.innerHTML = `
-            <h4>Bebida(s) ${index + 1} - R$${drinkOrder.quantidadeBebida * drinkInfo.price}</h4>
-            <p>Bebida: ${drinkInfo.name} </p>
+            <h4>Bebida(s) ${index + 1} - R$${totalDrinks.toFixed(2)}</h4>
+            <p>Bebida: ${drinkInfo.name} - R$${drinkInfo.price} </p>
             <p>Quantidade: ${drinkOrder.quantidadeBebida}</p>
             <button class="remove-button" data-index="${index}" data-type="drink">REMOVER</button>
         `;
