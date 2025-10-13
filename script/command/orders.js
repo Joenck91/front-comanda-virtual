@@ -1,16 +1,16 @@
-import  showItems from "../interface/command-box/show-items.js";
-//Array que guarda todos os pedidos da sessão
+import showItems from "../interface/command-box/show-items.js";
+import calculateTotalPrice from '../utils/priceCalculator.js';
+
 let notedOrder = {
     pizzas: [],
     drinks: []
 };
 
-function writingOrder (menu){
+function writingOrder(menu) {
     // Captura o envio do formulário de pizza
     const formPizza = document.querySelector('.unit-pizza-box');
     formPizza.addEventListener('submit', (e) => {
-        e.preventDefault(); // evita reload da página
-        //código aqui
+        e.preventDefault();
 
         const pizzaOrder = {
             pizza: document.getElementById('size').value,
@@ -20,40 +20,41 @@ function writingOrder (menu){
                 document.getElementById('flavor_two').value,
                 document.getElementById('flavor_three').value,
                 document.getElementById('flavor_four').value
-            ].filter(s => s), // remove strings vazias
+            ].filter(s => s)
+             .map(id => parseInt(id, 10)),
         };
 
-        // Adiciona ao array de pedidos
         notedOrder.pizzas.push(pizzaOrder);
-
-        // Atualiza a exibição dos itens pedidos
         showItems(notedOrder);
-
-        
-        console.log(notedOrder);
-
-
+        updateTotal();
     });
 
     //Captura o envio do formulário de bebidas
     const formDrinks = document.querySelector('.command-drink');
-    formDrinks.addEventListener('submit', (e) =>{
-        e.preventDefault(); //evita reload da página
-        //código aqui
+    formDrinks.addEventListener('submit', (e) => {
+        e.preventDefault();
+
         const drinkOrder = {
             bebida: document.querySelector('.command-drink select').value,
+            
             quantidadeBebida: parseInt(document.getElementById('unit-drink').value, 10)
         };
 
-        // Adiciona ao array de pedidos
         notedOrder.drinks.push(drinkOrder);
-        // Atualiza a exibição dos itens pedidos
         showItems(notedOrder);
-
-
-        console.log(notedOrder);
+            updateTotal();
     });
-
 };
 
-export {writingOrder, notedOrder};
+
+async function updateTotal() {
+    const totalValue = await calculateTotalPrice(notedOrder);
+    
+    // Supondo que você tenha um elemento com id="total-price" no seu HTML
+    const totalElement = document.getElementById('total-price');
+    if (totalElement) {
+        // .toFixed(2) garante que o preço sempre tenha duas casas decimais (ex: 55.00)
+        totalElement.textContent = `R$ ${totalValue.toFixed(2).replace('.', ',')}`;
+    }
+}
+export { writingOrder, notedOrder };
