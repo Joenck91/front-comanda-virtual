@@ -11,7 +11,7 @@ async function getMenu() {
     }
 
     try {
-        const response = await fetch('../../data/menu.json'); // Cuidado com o caminho aqui!
+        const response = await fetch('/front-comanda-virtual/data/menu.json'); // Cuidado com o caminho aqui!
         if (!response.ok) {
             throw new Error('Não foi possível carregar o menu.json');
         }
